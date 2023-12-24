@@ -1,0 +1,14 @@
+.button
+{
+-fx-background-color: linear-gradient(#CC9934,#1E1D1B);
+-fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+
+}
+
+root{
+    display: block;
+}
+
+.root{
+    -fx-background-color: #FAE5D3;
+}

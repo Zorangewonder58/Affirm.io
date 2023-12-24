@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="CENTER" hgap="10" prefHeight="400.0" prefWidth="600.0" vgap="10" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.affirmio.affirmio.MotivationViewController">
+   <Label fx:id="Response" alignment="CENTER" prefHeight="17.0" prefWidth="364.0" text="Motivation Added! Thank you!" GridPane.columnIndex="1" GridPane.rowIndex="6">
+      <font>
+         <Font name="System Bold Italic" size="12.0" />
+      </font>
+   </Label>
+
+    <Label fx:id="Greeting" alignment="CENTER" prefHeight="17.0" prefWidth="360.0" text="Hello" textAlignment="CENTER" textFill="#917951" GridPane.columnIndex="1">
+      <font>
+         <Font name="Bookman Old Style Bold Italic" size="18.0" />
+      </font></Label>
+    <Label fx:id="Precursor" alignment="CENTER" prefHeight="52.0" prefWidth="365.0" text="Precursor" textFill="#917951" GridPane.columnIndex="1" GridPane.rowIndex="3">
+      <font>
+         <Font size="14.0" />
+      </font></Label>
+    <Label fx:id="Motivation" alignment="CENTER" prefHeight="71.0" prefWidth="365.0" style="-fx-border-color: black; -fx-background-color: white;" text="Motivation Not Found" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="4">
+      <font>
+         <Font name="System Bold" size="12.0" />
+      </font></Label>
+
+    <AnchorPane fx:id="dynamicElementsContainer" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+   <HBox GridPane.columnIndex="1" GridPane.rowIndex="5">
+      <children>
+         <Button mnemonicParsing="false" onAction="#MotivationAdd" prefWidth="147.0" text="Add A Motivation" textFill="#efeded">
+            <HBox.margin>
+               <Insets left="20.0" right="40.0" />
+            </HBox.margin></Button>
+         <Button mnemonicParsing="false" onAction="#LoginReturn" prefWidth="147.0" text="Log Out" textFill="#f4f3f3" />
+      </children>
+   </HBox>
+   <HBox GridPane.rowIndex="5" />
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints maxWidth="-Infinity" minWidth="-Infinity" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+   </rowConstraints>
+
+    <stylesheets>
+        <URL value="@Motivation.css" />
+    </stylesheets>
+
+</GridPane>

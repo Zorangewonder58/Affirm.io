@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="CENTER" hgap="10" prefHeight="285.0" prefWidth="491.0" styleClass="root" vgap="10" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.affirmio.affirmio.HelloController">
+  <padding>
+    <Insets bottom="10" left="25" right="25" top="25" />
+  </padding>
+
+  <GridPane fx:id="dynamicElementsContainer" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+
+  <Label fx:id="nameLabel" text="Username" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+
+
+  <TextField fx:id="nameInput" text="Jaden" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+
+  <Label fx:id="passLabel" text="Password" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+
+  <PasswordField fx:id="passInput" onAction="#AuthenticationOnEnter" promptText="password" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+
+  <CheckBox fx:id="ShowPass" onAction="#ShowPassword" text="Show Password" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+
+  <Label fx:id="Requirements" text="1 Upper, 1 Lower, 1 Digit, 10 length" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+
+  <Button fx:id="LoginButton" onAction="#Authentication" text="Log in" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+
+  <Button fx:id="CreateUser" onAction="#CreateUser" text="Create User" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+   <AmbientLight color="CHARTREUSE" lightOn="true" GridPane.rowIndex="2" />
+   <Label fx:id="Userexist" alignment="CENTER" prefHeight="17.0" prefWidth="198.0" style="-fx-text-fill: #ef1010;" text="User already exists.." GridPane.columnIndex="2" GridPane.rowIndex="1" />
+    <Label fx:id="Usersuccess" alignment="CENTER" prefHeight="17.0" prefWidth="198.0" text="User creation successful" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+   <Label fx:id="InvalidPass" alignment="CENTER" prefHeight="17.0" prefWidth="200.0" style="-fx-text-fill: #ef1010;" text="Invalid Password/Username " textAlignment="CENTER" textFill="#ef1010" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+   <Label alignment="CENTER" prefHeight="17.0" prefWidth="205.0" text="Welcome to Affirmio" textAlignment="CENTER" GridPane.columnIndex="2">
+      <font>
+         <Font size="18.0" />
+      </font>
+   </Label>
+  <stylesheets>
+    <URL value="@Login.css" />
+  </stylesheets>
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+
+</GridPane>
